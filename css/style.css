@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.contaner {
+    width: 901px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* site-navigation */
+.site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-top: 76px;
+    margin-bottom: 76px;
+}
+
+.site-navigation-l {
+    margin-left: 162px;
+    margin-right: 120px;
+}
+
+.site-navigation-p {
+    margin-right: 100px;
+}
+
+.site-navigation-m {
+    margin-right: 92px;
+}
+
+.site-navigation-t {
+    margin-right: 162px;
+}
+
+.site-navigation a{
+    text-transform: uppercase;
+    color: #626262;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #03a9f4;   
+}
+ /* .rows-list part */
+
+ .rows-list ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ .rows-list-item-text {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.rows-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rows-list-item {
+    width: 420px;
+    margin-right: 56px;
+    margin-bottom: 90px;
+    margin-top: 30px;
+    padding: 0;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.rows-list-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.rows-list-image {
+    margin-bottom: 30px;
+}
+
+.rows-list-item h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.navigation-item {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.Load-more-button {
+    display: block;
+    border: solid black 1px;
+    margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    background-color: white;    
+}
+
+
+
+
+
+
