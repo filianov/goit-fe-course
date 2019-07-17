@@ -35,6 +35,11 @@ body {
 }
 
 .logo {
+    float: left;
+    margin-top: 38px;
+}
+
+/* .logo {
     font-family: 'Roboto', sans-serif;
     color: #555252;
     font-size: 30px;
@@ -52,7 +57,7 @@ body {
     float: left;
     margin-top: 36px;
     margin-bottom: 102px;
-}
+} */
 
 /* site-navigation */
 .site-navigation {
@@ -73,18 +78,18 @@ body {
     margin-right: 30px;
 }
 
-.site-navigation a{
+.menu-link {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #0f0101;
     text-decoration: none;
-    font-size: 14;
+    font-size: 14px;
     line-height: 11px;
     font-weight: bold;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: #1abc9c;   
 }
  /* galary part */
