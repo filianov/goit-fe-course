@@ -1,0 +1,336 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/roboto-slab-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+
+/* gentium-book-basic-italic - latin */
+@font-face {
+  font-family: 'Gentium Book Basic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Gentium Book Basic Italic'), local('GentiumBookBasic-Italic'),
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/gentium-book-basic-v10-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/gentium-book-basic-v10-latin-italic.woff') format('woff'), /* Modern Browsers */
+}
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.page-header {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  min-height: 40px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0; 
+  
+}
+
+.contaner {
+    
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.logo {
+  display: block;
+  width: 79px;
+}
+
+/* site-navigation */
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 485px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu-link {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #fed136;   
+}
+
+/* 
+  services part */
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 110px;
+}
+
+.title-after {
+  font-family: 'Gentium Book Basic', cursive, serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 70px;
+  color: #777777;
+}
+
+.title-main {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* <!--Services-list--> */
+
+.services {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+ .services-items {
+    width: 313px;
+    text-align: center;
+  }
+
+  .services-items::before {
+    content: "";
+    display: flex;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: solid 3px;
+    border-color: #fed136;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+  
+  }
+
+  .icon-gift::before {
+    background-image: url(../img/icons/Icon-Basket4039.png);
+    /* height: 39px; */
+  }
+
+  .icon-compok::before {
+    background-image: url(../img/icons/Icon-Laptop4135.png);
+    /* height: 32px; */
+  }
+
+  .icon-lock::before {
+    background-image: url(../img/icons/Icon-Locked2938.png);
+    /* height: 28px; */
+  }
+
+  
+  .title-item {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  }
+
+  /* <!-- Contact us form--> */
+
+.contact-us-form-wrapper {
+  position: relative;
+  background-color: #222222;
+  background-image: url(../img/icons/Map\ Image614537.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.title-form{
+  color: #ffffff;
+  margin-top: 110px;
+}
+.contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  list-style: none;
+}
+
+.contact-us-form-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+.contact-us-form-list-item {
+  width: 455px;
+  height: 50px;
+  margin: 15px auto;
+  margin-right: 30px;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+input {
+  width: 455px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  justify-content: stretch;
+  align-items: stretch;
+  padding-left: 15px; 
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #bbbbbb;;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+textarea {
+  width: 455px;
+  height: 213px;
+  padding: 0;
+  margin: 13px 0;
+  justify-content: stretch;
+  align-items: stretch;
+  padding-left: 15px; 
+  padding-top: 15px;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #bbbbbb;;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+  
+button {
+  transform: translateX(145%);
+  border: none;
+  border-radius: 3%;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 115px;
+  padding: 25px 45px;
+  background-color: #fed136;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+.mark:focus:required:valid {
+  border: 1px solid green;
+  outline-style: solid;
+  outline-color: green;
+}
+
+.mark:focus:required:invalid {
+  border: 1px solid red;
+  outline-style: solid;
+  outline-color: red;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type=«checkbox»].visually-hidden,
+input[type=«radio»].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
