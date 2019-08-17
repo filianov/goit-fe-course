@@ -12,8 +12,8 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -21,37 +21,37 @@ html {
   font-style: normal;
   font-weight: 700;
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/montserrat-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/montserrat-v14-latin-700.woff') format('woff'), /* Modern Browsers */
 }
 
-/* roboto-slab-regular - latin */
+/* roboto-300 - latin */
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/roboto-v20-latin-300.woff') format('woff'), /* Modern Browsers */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/roboto-slab-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
-}
-
-/* gentium-book-basic-italic - latin */
-@font-face {
-  font-family: 'Gentium Book Basic';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Gentium Book Basic Italic'), local('GentiumBookBasic-Italic'),
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/gentium-book-basic-v10-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework07/fonts/gentium-book-basic-v10-latin-italic.woff') format('woff'), /* Modern Browsers */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Users/filianov/Documents/GoITHomeworks/goit-fe-course/Homework08/fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
 }
 
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     background: rgb(255, 255, 255);
     font-size: 14px;
     line-height: 17px;
-    color: #777777;
+    color: #333333;
 }
 
 body {
@@ -96,13 +96,9 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  /* width: 485px; */
+  width: 485px;
   margin: 0;
   padding: 0;
-}
-
-.menu-list-item {
-  padding-left: 30px;
 }
 
 
@@ -229,10 +225,10 @@ body {
 }
 
 .contact-us-form-list {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: stretch;
-  align-items: stretch; */
+  align-items: stretch;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -244,7 +240,6 @@ body {
   width: 455px;
   height: 50px;
   margin: 15px auto;
-  margin-bottom: 30px;
   margin-right: 30px;
   justify-content: stretch;
   align-items: stretch;
@@ -272,7 +267,7 @@ input {
 
 textarea {
   width: 455px;
-  height: 210px;
+  height: 213px;
   padding: 0;
   margin: 13px 0;
   justify-content: stretch;
@@ -308,7 +303,7 @@ button {
   cursor: pointer;
 }
 
-/* .mark:focus:required:valid {
+.mark:focus:required:valid {
   border: 1px solid green;
   outline-style: solid;
   outline-color: green;
@@ -318,31 +313,19 @@ button {
   border: 1px solid red;
   outline-style: solid;
   outline-color: red;
-} */
-
-input[type="email"]:focus:invalid,
-textarea[name="message"]:focus:invalid,
-input[name="name"]:focus:invalid {
-outline-color: red;
-transition: outline-color 5s;
 }
 
-input[type="email"]:focus:valid,
-textarea[name="message"]:focus:valid,
-input[name="name"]:focus:valid {
-outline-color: green;
-transition: outline-color .4s;
-}
 
-.mark {
-box-sizing: border-box;
-margin: 14px 0;
-width: 455px;
-display: block;
-outline: 4px solid transparent;
-outline-offset: -2px;
-transition: outline-color 0.1s;
-}
+.Rectangle_1 {
+    background-color: rgb(26, 25, 21);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1440px;
+    height: 700px;
+    z-index: 41;
+  }
+  
 
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
@@ -362,4 +345,3 @@ input[type=«radio»].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
